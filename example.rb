@@ -1,6 +1,13 @@
-Employee.all.each do |employee|
-  surname = SurCameled::Surname.parse(employee.last_name)
+%w(O'brian Maclaren Maclaughlin Maclea Maclean Mcgovern).each do |name|
+  surname = SurCameled::Surname.parse(name)
   if surname
-    employee.update_attributes(:last_name => surname)
+    puts surname
   end
 end
+
+# O'Brian
+# MacLaren
+# MacLaughlin
+# MacLea
+# MacLean
+# McGovern
